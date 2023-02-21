@@ -1,0 +1,9 @@
+project:
+  output-dir: _docs
+
+website:
+  title: "hello-world"
+  site-url: "https://nitinverma78.github.io/hello-world"
+  description: "Hello World"
+  repo-branch: main
+  repo-url: "https://github.com/nitinverma78/hello-world"
