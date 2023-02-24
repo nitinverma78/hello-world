@@ -4,6 +4,9 @@
 	"name": "Python 3",
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
 	"image": "mcr.microsoft.com/devcontainers/python:0-3.11",
+	"features": {
+		"ghcr.io/devcontainers/features/conda:1": {}
+	},
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
@@ -12,7 +15,7 @@
 	// "forwardPorts": [],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "conda init bash && conda create -y -n dev python=3.10.8 && conda activate dev && conda install -y --file=environment.yml",
+	// "postCreateCommand": "conda init bash && conda create -y -n dev python=3.10.8 && conda activate dev && conda install -y --file=environment.yml"
      // "pip3 install --user -r requirements.txt", 
     // install vs python extension, select python dev as kernel
 
