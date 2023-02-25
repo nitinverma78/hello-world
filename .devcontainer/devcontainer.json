@@ -22,6 +22,8 @@
      // "pip3 install --user -r requirements.txt", 
     // install vs python extension, select python dev as kernel
 
+	// "postCreateCommand": "bash -i scripts/install-dev-tools.sh"
+
 	// Configure tool-specific properties.
 	"customizations": {
         "vscode": {
