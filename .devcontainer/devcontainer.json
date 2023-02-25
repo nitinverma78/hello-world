@@ -2,26 +2,50 @@
 // README at: https://github.com/devcontainers/templates/tree/main/src/python
 {
 	"name": "Python 3",
-	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
+	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile	
+	// "build": {"dockerfile": "Dockerfile", "context": ".."}
 	"image": "mcr.microsoft.com/devcontainers/python:0-3.11",
+
+	// Features to add to the dev container. More info: https://containers.dev/features.
 	"features": {
 		"ghcr.io/devcontainers/features/conda:1": {}
 	},
 
-	// Features to add to the dev container. More info: https://containers.dev/features.
+
 	// "features": {},
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	// "postCreateCommand": "conda init bash && conda create -y -n dev python=3.10.8 && conda activate dev && conda install -y --file=environment.yml"
+	// "postCreateCommand": "conda init bash && conda create -y -n dev python=3.10.8 && conda activate dev && conda install -y --file=environment.yml "
      // "pip3 install --user -r requirements.txt", 
     // install vs python extension, select python dev as kernel
 
 	// Configure tool-specific properties.
-	// "customizations": {},
-
+	"customizations": {
+        "vscode": {
+			// Set *default* container specific settings.json values on container create.
+			"settings": {
+				"python.defaultInterpreterPath": "/usr/local/bin/python",
+				"python.linting.pylintEnabled": true,
+				"python.linting.pylintPath": "/usr/local/bin/pylint",
+				"python.linting.enabled": true,
+                "python.testing.pytestArgs": [ "."],
+                "python.testing.unittestEnabled": false,
+                "python.testing.pytestEnabled": true,
+                "python.formatting.provider": "black",
+                "python.linting.mypyEnabled": true,
+			},
+            "extensions": [
+				"ms-python.python",
+				"ms-python.vscode-pylance",
+            ]
+        }
+    },
 	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
 	// "remoteUser": "root"
+	
+	// Set `remoteUser` to `root` to connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
+	// "remoteUser": "vscode"
 }
