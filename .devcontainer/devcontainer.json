@@ -28,21 +28,11 @@
 			// Set *default* container specific settings.json values on container create.
 			"settings": {
 				"python.defaultInterpreterPath": "/usr/local/bin/python",
-				"python.linting.pylintEnabled": true,
-				"python.linting.pylintPath": "/usr/local/bin/pylint",
-				"python.linting.enabled": true,
-                "python.testing.pytestArgs": [ "."],
-                "python.testing.unittestEnabled": false,
-                "python.testing.pytestEnabled": true,
-                "python.formatting.provider": "black",
-                "python.linting.mypyEnabled": true,
 			},
             "extensions": [
 				"ms-python.python",
 				"ms-python.vscode-pylance",
-				"ms-vscode-remote.remote-containers",
-				"DavidAnson.vscode-markdownlint",
-				"eamodio.gitlens"
+				"ms-azuretools.vscode-docker"
 			]
         }
     },
