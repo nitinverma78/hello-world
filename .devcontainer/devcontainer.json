@@ -40,7 +40,10 @@
             "extensions": [
 				"ms-python.python",
 				"ms-python.vscode-pylance",
-            ]
+				"ms-vscode-remote.remote-containers",
+				"DavidAnson.vscode-markdownlint",
+				"eamodio.gitlens"
+			]
         }
     },
 	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
