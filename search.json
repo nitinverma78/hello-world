@@ -1,0 +1,37 @@
+[
+  {
+    "objectID": "bench.html",
+    "href": "bench.html",
+    "title": "bench",
+    "section": "",
+    "text": "The autoreload extension is already loaded. To reload it, use:\n  %reload_ext autoreload\n\n\n\nsetup\n\nsource\n\nget_algs\n\n get_algs (fldr, filter_file, incl_file='*.py', excl_fldr='excl')\n\n\n\n\nruns\n\nsource\n\ngen\n\n gen (fam, n, sd)\n\n\n\n\nplots\n\nsource\n\nplot\n\n plot (sz, runs, algs, fams, typ)\n\n\n\n\nmain\n\nsource\n\nbenchmark\n\n benchmark (alg_fldr, data_sizes=[10], dist_families=['float', 'int',\n            'normal', 'lognormal', 'binomial', 'exponential', 'range'],\n            num_variations=1, **kwargs)\n\n\nsource\n\n\nmain\n\n main (fldr:str, **kwargs)\n\nBenchmark and plot runtime performance of algorithms stored in fldr, and optionally provide additional prameters for the algorithm\n\n\n\n\n\n\n\n\n\nType\nDetails\n\n\n\n\nfldr\nstr\nThe relative path to folder which contain all algorithms to run\n\n\nkwargs\n\n\n\n\n\n\n\n\nusage\n\nmain('../sort', data_sizes=[10, 1000], dist_families=[\"range\",\"int\"])\nmain('../search', data_sizes=[10, 1000], dist_families=[\"range\",\"int\"])\n\n\n\n\n\n\n\n\n\n\n\n\n\n\ntest_eq(1+1,2)"
+  },
+  {
+    "objectID": "core.html",
+    "href": "core.html",
+    "title": "core",
+    "section": "",
+    "text": "source\n\nfoo\n\n foo ()"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "benchmark",
+    "section": "",
+    "text": "The autoreload extension is already loaded. To reload it, use:\n  %reload_ext autoreload"
+  },
+  {
+    "objectID": "index.html#install",
+    "href": "index.html#install",
+    "title": "benchmark",
+    "section": "Install",
+    "text": "Install\npip install benchmark"
+  },
+  {
+    "objectID": "index.html#how-to-use",
+    "href": "index.html#how-to-use",
+    "title": "benchmark",
+    "section": "How to use",
+    "text": "How to use\nbenchmark sort algorithms in ‘../sort’ folder on arrays of size 10, 100 with data pulled from range and integer based distributions:\n\nbench.main('../sort', data_sizes=[10, 1000], dist_families=[\"range\",\"int\"])\n\n\n\n\n\n\n\nbenchmark all distributions\n\nbench.main('../sort', data_sizes=[10**3])\n\n\n\n\nbenchmark search algorithms with target=1\n\nbench.main('../search', data_sizes=[10], dist_families=[\"range\",\"int\"], target=1)\n\n\n\n\n\n#temp disabled"
+  }
+]
